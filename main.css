@@ -16,13 +16,23 @@ html {
     margin: 0 auto;
 }
 
-header {
+header,
+footer {
     background-color: #192a56;
     padding-top: 16px;
     color: #ffcf;
 }
 
-header>.container {
+header{
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 1;
+
+}
+
+header>.container,
+footer>.container{
     /* display: flex; */
     justify-content: space-between;
     align-items: center;
@@ -79,7 +89,7 @@ section h2 {
     margin-bottom: 16px;
 }
 
-.lista-veiculos{
+.lista-veiculos {
     /* justify-content: space-between; */
     flex-wrap: wrap;
 }
@@ -91,20 +101,20 @@ section h2 {
 
 }
 
-.lista-veiculos li img{
+.lista-veiculos li img {
     max-width: 100%;
 }
 
-.lista-veiculos li  h3{
-    
+.lista-veiculos li h3 {
+
     margin: 16px 0;
 }
 
-.item-central{
+.item-central {
     margin: 0 5%;
 }
 
-.lista-veiculos li button{
+button {
     display: block;
     width: 100%;
     padding: 8px 0;
@@ -118,15 +128,51 @@ section h2 {
     border-radius: 6px;
 }
 
-.price{
-    margin: 16px 0; 
+.price {
+    margin: 16px 0;
     display: block;
 }
 
-.price del{
-    color:#ccc ;
+.price del {
+    color: #ccc;
     font-size: 14px;
 }
 
+.form-campo {
+    margin-bottom: 16px;
+}
 
+.form-campo label {
+    font-weight: bold;
+    display: block;
+}
+
+.form-campo input,
+.form-campo textarea {
+    width: 100%;
+    display: block;
+    padding: 8px;
+}
+
+.form-campo textarea {
+    resize: none;
+    height: 120px;
+}
+
+form {
+    max-width: 360px;
+}
+
+form button {
+    max-width: 120px;
+}
+
+footer li {
+    list-style: none;
+    margin-left: 16px;
+}
+
+footer li img {
+    height: 32px;
+}
 
